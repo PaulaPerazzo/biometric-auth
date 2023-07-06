@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
-import Input from '../../components/Input';
 import * as LocalAuthentication from 'expo-local-authentication';
 import { useState } from 'react';
 
@@ -9,7 +8,7 @@ export default function LoginPage({ navigation }) {
   const [ password, setPassword ] = useState('');
 
   const handleLogin = () => {
-    const baseEmail = 'mpps@cin.ufpe.br';
+    const baseEmail = 'email@example.com';
     const basePassword = '123';
 
     if (email === baseEmail && password === basePassword) {
